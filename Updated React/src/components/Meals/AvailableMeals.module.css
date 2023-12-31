@@ -1,0 +1,41 @@
+.meals {
+  max-width: 60rem;
+  width: 90%;
+  margin: 2rem auto;
+  animation: meals-appear 1s ease-out forwards;
+}
+/* AvailableMeals.module.css */
+
+/* Styles for the search input */
+.searchInput {
+  width:97%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+.searchInput:focus {
+  border-color: #6c63ff;
+  /* Add additional styles for focus if desired */
+}
+
+.meals ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes meals-appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
